@@ -1,4 +1,4 @@
-# Image-Downloader
+# File-Downloader
 
 ```java
 public class Main {
