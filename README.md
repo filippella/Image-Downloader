@@ -1,22 +1,15 @@
 # Image-Downloader
-```
-Image-Downloader
 
 ```java
 public class Main {
-
     public static void main(String[] args) {
-
         DownloadManager manager = new DownloadManager(
                 "http://www.recetamojito.com/ImagenesRecetaMojito/ImagenesTop/mojito.jpg");
         manager.setDownloadPath("C:\\images\\");
         manager.download();
-
     }
 }
-
 ```
-
 License
 -------
 
