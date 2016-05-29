@@ -35,6 +35,6 @@ public class Main {
             manager.download();
         }
 
-        System.out.println("Main thread (almost) finished");
+        System.out.println("Main thread is finishing");
     }
 }
