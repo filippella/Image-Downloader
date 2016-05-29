@@ -40,17 +40,17 @@ public class ImageDownloader extends Downloader {
         try {
             double total = 0.0;
             int lenght = -1;
-
-            FileOutputStream out = new FileOutputStream(getFile());
+            File file = getFile();
+            FileOutputStream out = new FileOutputStream(file);
             byte buffer[] = new byte[BLOCK_SIZE];
 
             while ((lenght = inputStream.read(buffer, 0, BLOCK_SIZE)) != -1) {
                 total = total + lenght;
                 out.write(buffer, 0, lenght);
-                //listener.onProgress((int) ((total / fileSize) * 100));
+                listener.onProgress((int) ((total / fileSize) * 100));
             }
             inputStream.close();
-            //listener.onComplete(countPosition, file);
+            listener.onComplete(countPosition, file);
             downloadThread.interrupt();
         } catch (Exception e) {
             listener.onError(e.getMessage());

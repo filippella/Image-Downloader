@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package imagedownloader.callback;
 /**
  * Copyright 2016 Filippo.
  *
@@ -18,6 +12,13 @@ package imagedownloader.callback;
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
+ */
+package imagedownloader.callback;
+
+/**
+ * @author Filippo <filippo.eng@gmail.com>
+ * @version 1.0.0
+ * @since 5/22/2016
  */
 public interface Downloadable {
     
